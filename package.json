@@ -1,0 +1,50 @@
+{
+  "name": "rap-sage-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/humain/whiskey-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/humain/whiskey-bot/issues"
+  },
+  "homepage": "https://github.com/humain/whiskey-bot#readme",
+  "dependencies": {
+    "babel-core": "^6.23.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-latest": "^6.22.0",
+    "babel-register": "^6.23.0",
+    "body-parser": "^1.17.1",
+    "botbuilder": "^3.7.0",
+    "compression": "^1.6.2",
+    "cors": "^2.8.1",
+    "debug": "^2.6.1",
+    "express": "^4.15.2",
+    "express-package-version": "0.0.2",
+    "lodash": "^4.17.4",
+    "morgan": "^1.8.1",
+    "path": "^0.12.7",
+    "request": "^2.80.0",
+    "serve-favicon": "^2.4.1",
+    "server-destroy": "^1.0.1",
+    "sigterm-handler": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "babel-preset-stage-0": "^6.22.0",
+    "eslint": "^3.17.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-formatter-pretty": "^1.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0"
+  }
+}
