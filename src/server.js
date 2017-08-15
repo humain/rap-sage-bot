@@ -8,7 +8,7 @@ import expressVersion from 'express-package-version'
 import favicon from 'serve-favicon'
 
 class Server {
-  constructor({ port, appId, appSecret }){
+constructor({ port, appId, appSecret, geniusAccessToken }){
     this.address = this.address.bind(this)
     this.run = this.run.bind(this)
     this.stop = this.stop.bind(this)
@@ -16,6 +16,7 @@ class Server {
     this.port = port
     this.appId = appId
     this.appSecret = appSecret
+    this.geniusAccessToken = geniusAccessToken
   }
 
   address() {
@@ -30,7 +31,11 @@ class Server {
     app.use(bodyParser.json({ limit: '1mb' }));
     app.options('*', cors())
 
-    let router = new Router({ appId: this.appId, appSecret: this.appSecret})
+    let router = new Router({
+      appId: this.appId, 
+      appSecret: this.appSecret,
+      geniusAccessToken: this.geniusAccessToken
+    })
 
     router.route(app)
 
