@@ -1,17 +1,13 @@
-import { Prompts } from 'botbuilder'
+const { Prompts } = require('botbuilder');
 
 const dialog = [
   (session) => {
-    Prompts.text(session, "What artist should I quote?")
+    Prompts.text(session, "What are some of your favorite artists?")
   },
   (session, results) => {
     session.conversationData.artist = results.response
-    Prompts.text(session, "What subject matter are you interested in?")
-  },
-  (session, results) => {
-    session.conversationData.subject = results.response
     session.endDialog()
   }
 ]
 
-export default dialog
+module.exports =  dialog

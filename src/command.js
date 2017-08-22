@@ -1,16 +1,16 @@
-import _ from 'lodash';
+const _ = require('lodash');
 
-import SigtermHandler from 'sigterm-handler';
-import Server from './server';
+const SigtermHandler = require('sigterm-handler');
+const Server = require('./server');
 
-export default class Command {
+class Command {
   constructor() {
     this.panic = this.panic.bind(this);
     this.run = this.run.bind(this);
     this.serverOptions = {
       port:           process.env.PORT || 3000,
       appId:          process.env.MS_APP_ID,
-      appSecret:      process.env.MS_APP_PASSWORD,
+      appSecret:      process.env.MS_APP_SECRET,
       geniusAccessToken: process.env.GENIUS_ACCESS_TOKEN,
       disableLogging: process.env.DISABLE_LOGGING === "true"
     };
@@ -47,3 +47,5 @@ export default class Command {
     return sigtermHandler.register(server.stop);
   }
 }
+
+module.exports = Command;

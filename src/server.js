@@ -1,11 +1,11 @@
-import enableDestroy from 'server-destroy'
-import Router from './router'
-import express from 'express'
-import cors from 'cors'
-import morgan from 'morgan'
-import bodyParser from 'body-parser'
-import expressVersion from 'express-package-version'
-import favicon from 'serve-favicon'
+const enableDestroy = require('server-destroy');
+const Router = require('./router');
+const express = require('express');
+const cors = require('cors');
+const morgan = require('morgan');
+const bodyParser = require('body-parser');
+const expressVersion = require('express-package-version');
+const favicon = require('serve-favicon');
 
 class Server {
 constructor({ port, appId, appSecret, geniusAccessToken }){
@@ -32,7 +32,7 @@ constructor({ port, appId, appSecret, geniusAccessToken }){
     app.options('*', cors())
 
     let router = new Router({
-      appId: this.appId, 
+      appId: this.appId,
       appSecret: this.appSecret,
       geniusAccessToken: this.geniusAccessToken
     })
@@ -52,4 +52,4 @@ constructor({ port, appId, appSecret, geniusAccessToken }){
   }
 }
 
-export default Server
+module.exports =  Server
