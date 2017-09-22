@@ -5,28 +5,31 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "test:watch": "mocha -w -R mocha-multi --reporter-options spec=-,mocha-osx-reporter=-"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/humain/whiskey-bot.git"
+    "url": "git+https://github.com/kmariano/rap-sage-bot.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Koshin Mariano",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/humain/whiskey-bot/issues"
+    "url": "https://github.com/kmariano/rap-sage-bot/issues"
   },
-  "homepage": "https://github.com/humain/whiskey-bot#readme",
+  "homepage": "https://github.com/kmariano/rap-sage-bot#readme",
   "dependencies": {
     "body-parser": "^1.17.1",
     "botbuilder": "^3.7.0",
     "compression": "^1.6.2",
     "cors": "^2.8.1",
     "debug": "^3.0.0",
+    "dotenv": "^4.0.0",
     "express": "^4.15.2",
     "express-package-version": "0.0.2",
     "lodash": "^4.17.4",
     "lyricist": "^2.2.0",
+    "microsoft-adaptivecards": "^0.6.1",
     "morgan": "^1.8.1",
     "node-genius": "^1.1.0",
     "path": "^0.12.7",
@@ -36,11 +39,8 @@
     "sigterm-handler": "^2.0.0"
   },
   "devDependencies": {
-    "eslint": "^4.4.1",
-    "eslint-config-airbnb": "^15.1.0",
-    "eslint-formatter-pretty": "^1.1.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-react": "^7.2.0"
+    "chai": "^4.1.2",
+    "mocha": "^3.5.3",
+    "sinon": "^3.2.1"
   }
 }

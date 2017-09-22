@@ -7,6 +7,7 @@ class Command {
   constructor() {
     this.panic = this.panic.bind(this);
     this.run = this.run.bind(this);
+    console.log(process.env)
     this.serverOptions = {
       port:           process.env.PORT || 3000,
       appId:          process.env.MS_APP_ID,
