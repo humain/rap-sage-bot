@@ -1,0 +1,14 @@
+{
+  "name": "rap-sage-bot",
+  "type":"npm",
+  "env":{
+    "MS_APP_ID": "@ms_app_id",
+    "MS_APP_SECRET": "@ms_app_secret",
+    "LUIS_SUBSCRIPTION_KEY": "@luis_subscription_key",
+    "PORT": 3000
+  },
+  "alias": "rap-sage-bot",
+  "engines":{
+    "node": "^8.5.0"
+  }
+}

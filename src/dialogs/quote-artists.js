@@ -1,12 +1,12 @@
-const { Prompts, EntityRecognizer, Message} = require('botbuilder');
-const Genius                       = require('node-genius');
-const Lyricist                     =require('lyricist');
-const config                       = require('../config')
-const isEmpty                           = require('lodash/isEmpty')
-const first                           = require('lodash/first')
-const get                           = require('lodash/get')
-const {parseSongLyrics,getRandomVerseKey, getVerseQuoteFromSong}  = require('../helpers/song-parser')
-const {createArtistCard}  = require('../helpers/card-creator')
+const { Prompts, EntityRecognizer, Message}                      = require('botbuilder');
+const Genius                                                     = require('node-genius');
+const Lyricist                                                   =require('lyricist');
+const config                                                     = require('../config')
+const isEmpty                                                    = require('lodash/isEmpty')
+const first                                                      = require('lodash/first')
+const get                                                        = require('lodash/get')
+const {parseSongLyrics,getRandomVerseKey, getVerseQuoteFromSong} = require('../helpers/song-parser')
+const {createArtistCard}                                         = require('../helpers/card-creator')
 const debug                        = require('debug')('rap-sage-bot:dialog:quote-artists')
 
 const dialog = [
