@@ -1,6 +1,5 @@
 const {ChatConnector, UniversalBot, LuisRecognizer} = require('botbuilder');
 const _                                             = require('lodash');
-const defaultDialog                                 = require('./dialogs/default');
 const debug = require('debug')('rap-sage-bot:router')
 
 const config             =require('./config');

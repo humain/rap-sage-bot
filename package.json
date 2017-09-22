@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/kmariano/rap-sage-bot#readme",
   "dependencies": {
-    "body-parser": "^1.17.1",
+    "body-parser": "^1.18.2",
     "botbuilder": "^3.7.0",
     "compression": "^1.6.2",
     "cors": "^2.8.1",
