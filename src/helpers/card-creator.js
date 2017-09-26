@@ -1,6 +1,6 @@
 
 
-const createArtistCard = ({ name, imageUrl, displayText   }) => {
+const createArtistCard = ({ name, imageUrl, songTitle, displayText   }) => {
   const card = {
         'contentType': 'application/vnd.microsoft.card.adaptive',
         'content': {
@@ -32,7 +32,7 @@ const createArtistCard = ({ name, imageUrl, displayText   }) => {
                                     'items': [
                                         {
                                             'type': 'TextBlock',
-                                            'text': `The great sage ${name} says`,
+                                            'text': `${name}`,
                                             'weight': 'bolder',
                                             'size': 'extraLarge',
                                             'separation': 'strong'
