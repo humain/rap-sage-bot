@@ -20,27 +20,24 @@
   "homepage": "https://github.com/kmariano/rap-sage-bot#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
-    "botbuilder": "^3.7.0",
-    "compression": "^1.6.2",
+    "botbuilder": "^3.10.2",
     "cors": "^2.8.1",
-    "debug": "^3.0.0",
+    "debug": "^3.1.0",
     "dotenv": "^4.0.0",
-    "express": "^4.15.2",
+    "express": "^4.15.5",
     "express-package-version": "0.0.2",
     "lodash": "^4.17.4",
-    "lyricist": "^2.2.0",
-    "microsoft-adaptivecards": "^0.6.1",
-    "morgan": "^1.8.1",
+    "lyricist": "^2.2.2",
+    "morgan": "^1.9.0",
     "node-genius": "^1.1.0",
     "path": "^0.12.7",
-    "request": "^2.80.0",
-    "serve-favicon": "^2.4.1",
+    "request": "^2.83.0",
     "server-destroy": "^1.0.1",
     "sigterm-handler": "^2.0.0"
   },
   "devDependencies": {
     "chai": "^4.1.2",
     "mocha": "^3.5.3",
-    "sinon": "^3.2.1"
+    "sinon": "^3.3.0"
   }
 }

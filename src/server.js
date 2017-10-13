@@ -5,7 +5,6 @@ const cors = require('cors');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const expressVersion = require('express-package-version');
-const favicon = require('serve-favicon');
 
 class Server {
 constructor({ port, appId, appSecret, geniusAccessToken }){
